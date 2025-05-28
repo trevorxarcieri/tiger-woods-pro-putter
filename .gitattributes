@@ -1,0 +1,12 @@
+# Text assets stay in normal Git for diff/merge
+*.cs     text diff=csharp
+*.shader text
+
+# Binary assets use LFS
+# (attr 'uselfs' is defined earlier as filter=lfs diff=lfs merge=lfs)
+*.png    uselfs
+*.jpg    uselfs
+*.fbx    uselfs
+*.wav    uselfs
+*.mp4    uselfs
+*.unitypackage uselfs
